@@ -2,7 +2,7 @@ id: wrong_rendering
 title: Wrong Rendering
 description: "When a website slow-down makes creepy Joe from Sales mad, Keen and the team find themselves in the midst of a rendering crisis. It’s up to you to fix rendering issues, bring sales up and stop Joe from texting ever again."
 summary: "When a website slow-down makes creepy Joe from Sales mad, Keen and the team find themselves in the midst of a rendering crisis. It’s up to you to fix rendering issues, bring sales up and stop Joe from texting ever again."
-level: intermidiate
+level: intermediate
 steps:
 - find_component
 - number_of_renders
