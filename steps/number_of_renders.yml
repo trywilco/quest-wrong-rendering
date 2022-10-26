@@ -9,7 +9,7 @@ startFlow:
     params:
       person: keen
       messages:
-      - text: "text1"
+      - text: Ok, it seems to have a problem, how many times does it render? 
         delay: 2000
       - text: "text2"
         delay: 3500
@@ -42,7 +42,7 @@ trigger:
           params:
             person: keen
             messages:
-            - text: Good catch! I'll let the support team know.
+            - text: It definitely seems like it renders too many times. I mean, we don’t really need to render every time a visitor does <when project>. 
               delay: 1300
         - actionId: finish_step
       else:
@@ -51,5 +51,5 @@ trigger:
           params:
             person: keen
             messages:
-            - text: Try again! I'm sure you'll figure this out.
+            - text: I’m not seeing the same thing on my end, can you please recheck?
               delay: 2500
