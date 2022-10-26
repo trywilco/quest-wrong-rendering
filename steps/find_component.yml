@@ -17,11 +17,11 @@ startFlow:
         delay: 2000
         - text: They’re saying it’s working sooooo slow. Some are comparing us to the last season of Game of Thrones! Sales are plumbing and our review ranking is going down. 
         delay: 3500
-        - text: <Image>
+        - text: https://res.cloudinary.com/wilco/image/upload/v1666796470/wilco-assets/hackathon/26-10-2022se9jl_gsimage_lecxnz.png
         delay: 2000
         - text: This is serious. Creepy Joe from Sales is really pissed.
         delay: 2000
-        - text: <image>
+        - text: https://res.cloudinary.com/wilco/image/upload/v1666796470/wilco-assets/hackathon/Screen_Shot_2022-10-26_at_17.52.01_zqsqin.png
         delay: 2000
          - text: The worst thing that has happened to me since U2 launched that album with Apple straight into my iTunes”  he said!
 We need to solve it ASAP.
