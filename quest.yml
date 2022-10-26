@@ -6,7 +6,6 @@ level: intermediate
 steps:
 - find_component
 - number_of_renders
-- send_pr
 duration: 1.5
 skills:
 - frontend
