@@ -39,25 +39,14 @@ trigger:
         params:
           text: "${userMessageText}"
           strings:
-          - - mobile
-          - - non web
-          - - android
-            - ios
-          - - android
-            - iphone
-          - - android
-            - mobile
-          - - iphone
-            - mobile
-          - - ios
-            - mobile
+          - ItemList
       then:
         do:
         - actionId: bot_message
           params:
             person: keen
             messages:
-            - text: Great! Seems like you found it. We;re a great team!
+            - text: Great! Seems like you found it. We're a great team!
               delay: 1300
         - actionId: finish_step
       else:
