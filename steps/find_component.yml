@@ -25,7 +25,7 @@ startFlow:
         delay: 3500
       - text: Let’s fix it together, we’ll be done in no time.
         delay: 3500
-      - text: Here’s the link to the page sales mentioned; please review the page and tell me which component is problematic. It’s probably rendering an unusual amount of times. 
+      - text: Please review the Marketplace homepage and tell me which component is problematic. It’s probably rendering an unusual amount of times. 
         delay: 3500
         
 trigger:
