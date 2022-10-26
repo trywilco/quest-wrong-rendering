@@ -11,11 +11,11 @@ startFlow:
     params:
       person: keen
       messages:
-      - text: "Now that we know which users are affected, go ahead and fix the bug!"
+      - text: Mmmmm it seems like you’re on top of it!
         delay: 1300
-      - text: "Only, you know, don’t—you might break something"
+      - text: I'll tell you what,there’s a new reality TV show that combines “Cake or not” and “too hot to handle and I’m in the middle of binging it. 
         delay: 1400
-      - text: "It’s not that I don’t trust you, but the management definitely doesn’t, so please begin by **reproducing the bug locally** and sending me the **URL of the path** where you saw the issue. Then we’ll try to fix it on your machine, and only if it works, we’ll fix it in production."
+      - text: Can you please fix the rendering issue and send me the PR to review?
         delay: 3500
 trigger:
   type: user_message
@@ -34,7 +34,13 @@ trigger:
           params:
             person: keen
             messages:
-            - text: "Wow, that is indeed a problematic screen! Looks like we forgot about mobile devices when we created this screen."
+            - text: Looks like we’re done. Joe will be happy! 
+              delay: 1500
+              - text: Man, I can’t believe that dude was cake all along. 
+              delay: 1500
+              - text: Anyway - thanks for fixing it!  
+              delay: 1500
+              - text: Its’ time to choose your next assignment!
               delay: 1500
         - actionId: finish_step
       else:
@@ -43,5 +49,5 @@ trigger:
           params:
             person: keen
             messages:
-            - text: "Umm, that doesn't look right. Maybe it's a different URL?"
+            - text: Argggg, it doesn’t seem to work, can you please try again?
               delay: 1400
