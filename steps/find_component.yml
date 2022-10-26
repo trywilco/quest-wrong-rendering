@@ -19,7 +19,9 @@ startFlow:
         delay: 3500
         - text: <Image>
         delay: 2000
-        - text: This is serious. Joe from Sales is really pissed.
+        - text: This is serious. Creepy Joe from Sales is really pissed.
+        delay: 2000
+        - text: <image>
         delay: 2000
          - text: The worst thing that has happened to me since U2 launched that album with Apple straight into my iTunes”  he said!
 We need to solve it ASAP.
