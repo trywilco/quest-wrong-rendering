@@ -22,7 +22,7 @@ trigger:
         params:
           text: "${userMessageText}"
           strings:
-          - 6
+          - six
       then:
         do:
         - actionId: bot_message
