@@ -19,37 +19,55 @@ startFlow:
         delay: 3500
       - text: Can you please fix the rendering issue and send me the PR to review?
         delay: 3500
+
 trigger:
-  type: user_message
-  params: 
-    person: keen
+  type: github_pr_lifecycle_status
   flowNode:
-    if:
-      conditions:
-      - conditionId: text_match_regex
-        params:
-          text: "${userMessageText}"
-          regex: ".*localhost.*@"
-      then:
-        do:
-        - actionId: bot_message
-          params:
-            person: keen
-            messages:
-            - text: Looks like we’re done. Joe will be happy! 
-              delay: 1500
-            - text: Man, I can’t believe that dude was cake all along. 
-              delay: 1500
-            - text: Anyway - thanks for fixing it!  
-              delay: 1500
-            - text: Its’ time to choose your next assignment!
-              delay: 1500
-        - actionId: finish_step
-      else:
-        do:
-        - actionId: bot_message
-          params:
-            person: keen
-            messages:
-            - text: Argggg, it doesn’t seem to work, can you please try again?
-              delay: 1400
+    switch:
+      key: "${eventType}"
+      cases:
+        github_pr_opened:
+          do:
+          - actionId: bot_message
+            params:
+              person: keen
+              messages:
+              - text: "On it, I'll review the changes right away."
+                delay: 1000
+          - actionId: github_pr_comment
+            params:
+              person: keen
+              message: "On it, I'll review the changes right away."
+        github_pr_workflow_complete_success:
+          do:
+          - actionId: bot_message
+            params:
+              person: keen
+              messages:
+              - text: Looks like we’re done. Joe will be happy! 
+                delay: 1500
+              - text: Man, I can’t believe that dude was cake all along. 
+                delay: 1500
+              - text: Anyway - thanks for fixing it!  
+                delay: 1500
+              - text: Its’ time to choose your next assignment!
+                delay: 1500
+          - actionId: github_pr_approve
+            params:
+              person: keen
+              message: "Looks like we’re done. Joe will be happy! You can now merge the PR."
+        github_pr_workflow_complete_failure:
+          do:
+          - actionId: bot_message
+            params:
+              person: keen
+              messages:
+              - text: Argggg, it doesn’t seem to work, can you please try again?
+                delay: 3000
+          - actionId: github_pr_reject
+            params:
+              person: keen
+              message: Argggg, it doesn’t seem to work, can you please try again?
+        github_pr_merged:
+          do:
+          - actionId: finish_step
