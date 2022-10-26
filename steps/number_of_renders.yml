@@ -10,8 +10,6 @@ startFlow:
       person: keen
       messages:
       - text: Ok, it seems to have a problem, how many times does it render? 
-        delay: 2000
-      - text: "text2"
         delay: 3500
 trigger:
   type: user_message
