@@ -22,18 +22,7 @@ trigger:
         params:
           text: "${userMessageText}"
           strings:
-          - - mobile
-          - - non web
-          - - android
-            - ios
-          - - android
-            - iphone
-          - - android
-            - mobile
-          - - iphone
-            - mobile
-          - - ios
-            - mobile
+          - 6
       then:
         do:
         - actionId: bot_message
