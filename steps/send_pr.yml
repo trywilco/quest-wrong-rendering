@@ -11,13 +11,13 @@ startFlow:
     params:
       person: keen
       messages:
-      - text: Mmmmm it seems like you’re on top of it!
+    - text: Mmmmm it seems like you’re on top of it!
         delay: 1300
-      - text: I'll tell you what,there’s a new reality TV show that combines “Cake or not” and “too hot to handle and I’m in the middle of binging it. 
+    - text: I'll tell you what,there’s a new reality TV show that combines “Cake or not” and “too hot to handle and I’m in the middle of binging it. 
         delay: 1400
-        - text: https://res.cloudinary.com/wilco/image/upload/v1666796474/wilco-assets/hackathon/hotcakes_copy_b67ops.jpg
+    - text: https://res.cloudinary.com/wilco/image/upload/v1666796474/wilco-assets/hackathon/hotcakes_copy_b67ops.jpg
         delay: 3500
-      - text: Can you please fix the rendering issue and send me the PR to review?
+    - text: Can you please fix the rendering issue and send me the PR to review?
         delay: 3500
 trigger:
   type: user_message
@@ -38,11 +38,11 @@ trigger:
             messages:
             - text: Looks like we’re done. Joe will be happy! 
               delay: 1500
-              - text: Man, I can’t believe that dude was cake all along. 
+            - text: Man, I can’t believe that dude was cake all along. 
               delay: 1500
-              - text: Anyway - thanks for fixing it!  
+            - text: Anyway - thanks for fixing it!  
               delay: 1500
-              - text: Its’ time to choose your next assignment!
+            - text: Its’ time to choose your next assignment!
               delay: 1500
         - actionId: finish_step
       else:
