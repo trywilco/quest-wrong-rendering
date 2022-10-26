@@ -1,8 +1,8 @@
 id: find_component
 learningObjectives: 
-- tbd
+- When a react component is being rendered
 hints:
-- tbd
+- Try and install the [React DevTools](https://github.com/facebook/react/tree/main/packages/react-devtools) extension on your browser, and see when components are being rendered.
 startFlow:
   do:
   - actionId: bot_message
