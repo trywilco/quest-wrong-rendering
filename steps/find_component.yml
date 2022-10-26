@@ -27,7 +27,6 @@ startFlow:
         delay: 3500
       - text: Please review the Marketplace homepage and tell me which component is problematic. It’s probably rendering an unusual amount of times. 
         delay: 3500
-        
 trigger:
   type: user_message
   params: 
