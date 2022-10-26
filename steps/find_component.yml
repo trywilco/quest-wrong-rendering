@@ -11,8 +11,6 @@ startFlow:
       messages:
       - text: OMG,${user.firstName}, did you see this?
         delay: 2000
-      - text: <Add Image<
-        delay: 3500
       - text: People are butchering our website on social media!
         delay: 2000
       - text: They’re saying it’s working sooooo slow. Some are comparing us to the last season of Game of Thrones! Sales are plumbing and our review ranking is going down. 
