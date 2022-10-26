@@ -23,8 +23,7 @@ startFlow:
         delay: 2000
       - text: https://res.cloudinary.com/wilco/image/upload/v1666796470/wilco-assets/hackathon/Screen_Shot_2022-10-26_at_17.52.01_zqsqin.png
         delay: 2000
-      - text: The worst thing that has happened to me since U2 launched that album with Apple straight into my iTunes”  he said!
-We need to solve it ASAP.
+      - text: The worst thing that has happened to me since U2 launched that album with Apple straight into my iTunes”  he said! We need to solve it ASAP.
         delay: 2000
       - text: Let’s fix it together, we’ll be done in no time.
         delay: 2000
