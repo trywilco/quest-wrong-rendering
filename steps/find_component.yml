@@ -1,0 +1,55 @@
+id: find_component
+learningObjectives: 
+- tbd
+hints:
+- tbd
+startFlow:
+  do:
+  - actionId: bot_message
+    params:
+      person: keen
+      messages:
+      - text: "text1"
+        delay: 2000
+      - text: "text2"
+        delay: 3500
+trigger:
+  type: user_message
+  params: 
+    person: keen
+  flowNode:
+    if:
+      conditions:
+      - conditionId: text_contains_strings
+        params:
+          text: "${userMessageText}"
+          strings:
+          - - mobile
+          - - non web
+          - - android
+            - ios
+          - - android
+            - iphone
+          - - android
+            - mobile
+          - - iphone
+            - mobile
+          - - ios
+            - mobile
+      then:
+        do:
+        - actionId: bot_message
+          params:
+            person: keen
+            messages:
+            - text: Good catch! I'll let the support team know.
+              delay: 1300
+        - actionId: finish_step
+      else:
+        do:
+        - actionId: bot_message
+          params:
+            person: keen
+            messages:
+            - text: Try again! I'm sure you'll figure this out.
+              delay: 2500
