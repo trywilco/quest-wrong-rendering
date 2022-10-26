@@ -1,21 +1,22 @@
-# quest-template
+# Wrong Rendering
 
 ## Quest Details 
-#### title: 
-#### level: 
-#### skills:
-#### dependencies: 
+#### title: Wrong Rendering
+#### tageline: How many is too many?
+#### level: Intermidate 
+#### skills: Frontend
+#### dependencies: none
 
 
 ## Overview 
-Explain what the quest is about and describe the main task the user needs to perform in this quest. 
+On one bright day, Anythink's users started complaining the website is just too slow. It's a react rendering problem. The user needs to find the component that's rendring too many times and fix it! 
 
 
 ## Outline
 Describe each step in the quest. 
-- Step 1 [step id]: 
-- Step 2 [step id]:
-- ...
+- Step 1 [step id]: The user needs to find the component that is rendering too many times and report to Ness
+- Step 2 [step id]: The user needs to report to Ness (?) how many times the component renders
+- Step 3 [step id]: The user needs to fix the component and send PR for approval
 
 
 ## Textbook solution
